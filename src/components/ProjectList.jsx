@@ -12,7 +12,7 @@ function ProjectList() {
         // Usar a URL base do backend. Assumindo que o backend está na Render.
         // A URL exata do seu backend na Render precisaria ser configurada aqui.
         // Por enquanto, usarei um placeholder. No deploy final, isso será ajustado.
-        const response = await fetch(\'https://portfolio-admin-backend-lrib.onrender.com/api/projects\');       if (!response.ok) {
+        const response = await fetch('https://portfolio-admin-backend-lrib.onrender.com/api/projects');       if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
