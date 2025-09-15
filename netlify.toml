@@ -7,7 +7,6 @@
   to = "https://portfolio-admin-backend-lrib.onrender.com/api/:splat"
   status = 200
   force = true
-  headers = {X-From = "Netlify"}
 
 [[headers]]
   for = "/api/*"
