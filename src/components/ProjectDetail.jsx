@@ -56,7 +56,7 @@ function ProjectDetail() {
           />
         ))}
       </div>
-      <Link to="/portfolio">Voltar para a lista de projetos</Link>
+      <Link to="/">Voltar para a lista de projetos</Link>
     </div>
   );
 }

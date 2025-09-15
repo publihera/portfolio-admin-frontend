@@ -44,7 +44,7 @@ function ProjectList() {
           <li key={project.id}>
             <h2>{project.title}</h2>
             <p>{project.description}</p>
-            <Link to={`/portfolio/projects/${project.id}`}>Ver Detalhes</Link>
+            <Link to={`/projects/${project.id}`}>Ver Detalhes</Link>
           </li>
         ))}
       </ul>
