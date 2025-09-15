@@ -13,7 +13,7 @@ function ProjectDetail() {
         // Usar a URL base do backend. Assumindo que o backend está na Render.
         // A URL exata do seu backend na Render precisaria ser configurada aqui.
         // Por enquanto, usarei um placeholder. No deploy final, isso será ajustado.
-        const response = await fetch(`https://portfolio-admin-backend-lrib.onrender.com/api/projects/${id}`);
+        const response = await fetch(`/api/projects/${id}`);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -50,7 +50,7 @@ function ProjectDetail() {
         {project.images && project.images.map((image, index) => (
           <img
             key={index}
-            src={`https://portfolio-admin-backend-lrib.onrender.com/api/images/${image.filename}`}
+            src={`/api/images/${image.filename}`}
             alt={image.alt_text}
             style={{ maxWidth: '100%', height: 'auto', marginBottom: '10px' }}
           />
